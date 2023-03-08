@@ -12,7 +12,7 @@ marked.setOptions({
 });
 
 const main = async () => {
-	await ensureConfig();
+	const config = await ensureConfig();
 
 	// Get prompt either from argv if present, or ask for it
 	let promptStr = process.argv[2];
@@ -30,7 +30,7 @@ const main = async () => {
 	}
 
 	const configuration = new Configuration({
-		apiKey: process.env.OPENAI_API_KEY,
+		apiKey: config.apiKey,
 	});
 	const openai = new OpenAIApi(configuration);
 	const messages: ChatCompletionRequestMessage[] = [];

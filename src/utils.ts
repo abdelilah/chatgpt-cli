@@ -49,6 +49,8 @@ export const ensureConfig = async () => {
 		fs.mkdirSync(`${os.homedir()}/.chatgpt-cli`, { recursive: true });
 		fs.writeFileSync(configPath, JSON.stringify(config, null, 4));
 	}
+
+	return config;
 };
 
 export default {};
