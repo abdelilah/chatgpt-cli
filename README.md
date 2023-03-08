@@ -9,7 +9,7 @@ Please note that the ChatGPT API is paid and you need to set up billing in your 
 ## Installation
 
 ```shell
-npm install -g chatgpt-cli
+npm install -g chatgpt-api-cli
 ```
 
 ## Configuration

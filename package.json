@@ -1,7 +1,7 @@
 {
-	"name": "chatgpt-cli",
+	"name": "chatgpt-api-cli",
 	"version": "0.0.1",
-	"description": "Run ChatGPT in the terminal",
+	"description": "Run ChatGPT in the terminal using the official ChatGPT API",
 	"main": "./dist/index.js",
 	"scripts": {
 		"start": "tsc --watch",
