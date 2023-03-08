@@ -48,8 +48,7 @@ const main = async () => {
 
 		completion.data.choices.forEach((choice) => {
 			if (choice.message?.role === 'assistant') {
-				// @eslint-disable-next-line no-console
-				console.log(marked(choice.message?.content));
+				process.stdout.write(`${marked(choice.message?.content)}\n`);
 				messages.push(choice.message);
 			}
 		});

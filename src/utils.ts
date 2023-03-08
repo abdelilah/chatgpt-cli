@@ -41,8 +41,7 @@ export const ensureConfig = async () => {
 		try {
 			await openai.listModels();
 		} catch (e) {
-			// @eslint-disable-next-line no-console
-			console.error('Invalid API key, please try again with a valid one.');
+			process.stdout.write('Invalid API key, please try again with a valid one.\n');
 			return;
 		}
 
