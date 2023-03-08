@@ -1,0 +1,55 @@
+{
+	"name": "chatgpt-cli",
+	"version": "0.0.1",
+	"description": "Run ChatGPT in the terminal",
+	"main": "./dist/index.js",
+	"scripts": {
+		"start": "tsc --watch",
+		"build": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "./node_modules/.bin/eslint --ext .ts src",
+		"lint:fix": "./node_modules/.bin/eslint --ext .ts src --fix",
+		"prepublish": "npm run build",
+		"prepublishOnly": "npm run lint"
+	},
+	"bin": {
+		"chatgpt": "./dist/index.js"
+	},
+	"files": [
+		"dist"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/abdelilah/chatgpt-cli.git"
+	},
+	"keywords": [
+		"chatgpt",
+		"ai",
+		"cli",
+		"terminal"
+	],
+	"author": "Abdelilah Sawab",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/abdelilah/chatgpt-cli/issues"
+	},
+	"homepage": "https://github.com/abdelilah/chatgpt-cli#readme",
+	"dependencies": {
+		"commander": "^10.0.0",
+		"marked": "^4.2.12",
+		"marked-terminal": "^5.1.1",
+		"openai": "^3.2.1",
+		"prompts": "^2.4.2"
+	},
+	"devDependencies": {
+		"@types/marked": "^4.0.8",
+		"@types/node": "^18.14.6",
+		"@types/prompts": "^2.4.2",
+		"@typescript-eslint/eslint-plugin": "^5.54.1",
+		"@typescript-eslint/parser": "^5.54.1",
+		"eslint": "^8.35.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"typescript": "^4.9.5"
+	}
+}
