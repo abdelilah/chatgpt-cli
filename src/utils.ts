@@ -42,7 +42,7 @@ export const ensureConfig = async () => {
 			await openai.listModels();
 		} catch (e) {
 			process.stdout.write('Invalid API key, please try again with a valid one.\n');
-			return;
+			process.exit();
 		}
 
 		// Save config
