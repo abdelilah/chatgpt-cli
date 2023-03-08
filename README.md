@@ -21,13 +21,13 @@ The first time you run the command, you will be prompted to enter your API key. 
 Running the tool is as simple as:
 
 ```shell
-gpt
+chatgpt
 ```
 
 You can also pass in a prompt to the tool:
 
 ```shell
-gpt "Hello, my name is"
+chatgpt "Hello, my name is"
 ```
 
 ### Issues / Feature Requests
